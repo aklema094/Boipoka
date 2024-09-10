@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "859809682293",
+    "project_id": "boipoka-d35e6",
+    "storage_bucket": "boipoka-d35e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859809682293:android:5804e2b6429a3687f2393c",
+        "android_client_info": {
+          "package_name": "com.example.boipoka"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvZZL8WZNcMxP0j98uhniKUslTEtNfcLM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
