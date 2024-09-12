@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="nevyBlue">#1e2f38</color>
+    <color name="gunmetal">#30313a</color>
+    <color name="silver_sand">#a7a7a7</color>
+    <color name="chinese_blue">#2B2C66</color>
 </resources>

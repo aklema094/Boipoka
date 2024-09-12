@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".getStart4">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/nevyBlue">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/get_start4">
+        </ImageView>
+
+
+        <Button
+            android:id="@+id/nextButton3"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/next_button"
+            android:text="@string/finish"
+            android:textSize="18sp"
+            android:fontFamily="@font/nexa_bold"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/img"
+            android:layout_marginRight="38dp"
+            android:layout_marginBottom="30dp"
+            android:textAllCaps="false"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</LinearLayout>
