@@ -31,46 +31,173 @@
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="previous">Previous</string>
-
-    <string name="lorem_ipsum">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
-        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
-        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
-        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
-        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
-        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
-        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
-        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
-        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
-        bibendum, vel congue leo egestas.\n\n
-        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
-        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
-        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
-        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
-        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
-        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
-        est.\n\n
-        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
-        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
-        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
-        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
-        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
-        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
-        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
-        convallis.\n\n
-        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
-        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
-        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
-        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
-        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
-        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
-    </string>
     <string name="sign_in">Sign in</string>
     <string name="already_have_an_account">Already have an account ?</string>
     <string name="pass">Password</string>
     <string name="forgot_password">Forgot password</string>
     <string name="_880_xxxxxxxx">+880 - xxxxxxxx</string>
+    <string name="titles">Titles, authors or topic</string>
+    <string name="delete_conversation">Deleting this Conversation will result in completely removing your chat history from your account</string>
+    <string name="otp_verification">OTP verification</string>
+    <string name="we_will_send_you_an_one_time_password_on_this_mobile_number">We will send you an One time Password on this Mobile number</string>
+    <string name="enter_mobile_number">Enter Mobile number</string>
+    <string name="_880">+88</string>
+    <string name="_1234567890">-1234567890</string>
+    <string name="get_otp">Get otp</string>
+    <string name="enter_the_otp_sent_to">Enter the OTP sent to</string>
+    <string name="didn_t_receive_the_otp">Didn\'t receive the OTP?</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="verify">Verify</string>
+    <string name="submit">Submit</string>
+    <string name="maybe_later">Maybe Later</string>
+    <string name="add_books">Add Book</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="title_name">Title name</string>
+    <string name="author_name">Author Name</string>
+    <string name="publisher_name">Publisher Name</string>
+    <string name="description">Description</string>
+    <string name="save_default_location">Save Default Location</string>
+    <string name="add_new_location">Add new Location</string>
+
+    <string name="user_heading">User Profile</string>
+    <string name="user_name">User name</string>
+    <string name="user_email">useremail@gmail.com</string>
+    <string name="total_books_number">18</string>
+    <string name="total_books">Total Books</string>
+    <string name="followers_number">22</string>
+    <string name="followers">Followers</string>
+    <string name="following_numbers">50</string>
+    <string name="following">Following</string>
+    <string name="user_profile_messages">Messages</string>
+    <string name="user_profile_add_books">Add Books </string>
+    <string name="user_profile_my_books">My Books </string>
+    <string name="user_profile_book_location">Book Location </string>
+    <string name="user_profile_My_favourites">My favourites </string>
+    <string name="user_profile_reviews">Reviews</string>
+    <string name="user_profile_followings">Followings</string>
+    <string name="user_profile_followers">Followers</string>
+    <string name="user_profile_exchange_history">Exchange History</string>
+    <string name="user_profile_my_card">My Card</string>
+    <string name="user_profile_drafts">Drafts</string>
+    <string name="user_profile_sign_out">Sign Out</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="add_book_location">Add Book Location</string>
+    <string name="share">Share</string>
+    <string name="about_us">About us</string>
+    <string name="log_out">Log out</string>
+    <string name="others">Others</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="message">Message</string>
+    <string name="category">Category</string>
+    <string name="favourite">Favourite</string>
+    <string name="card">Cart</string>
+    <string name="add_book">Add Book</string>
+    <string name="profile">Profile</string>
+    <string name="about_us_text">In today\'s age of technology, Old book sharing platform is needed to increase the scope of knowledge
+        in the world by removing the narrowness of knowledge. The Boi Poka.apk app makes a unique contribution to uniting book lovers
+        from around the globe. This applications main attribute is solved the unused books into a usable form by using the swap method
+        to one book lover to other book lover. In this way, the book will not be stored in your old shelf forever and by transferring
+        the book to a person who is surely in need of that will have the book apparently without transaction.</string>
+    <string name="settings">Settings</string>
+    <string name="change">Change</string>
+    <string name="address">Address</string>
+    <string name="set_your_gender">Set your gender</string>
+    <string name="birthday">Birthday</string>
+    <string name="set_your_date_of_birth">Set your date of birth</string>
+    <string name="education">Education</string>
+    <string name="set_your_academy_name">Set your Academy name</string>
+    <string name="close_account">Close Account</string>
+    <string name="set_or_change">Set or Change</string>
+    <string name="save">Save</string>
+    <string name="add_or_change">Add or Change</string>
+    <string name="set_your_address">Set your address</string>
+    <string name="set_image">Set image</string>
+    <string name="discover_books">Discover Books</string>
+    <string name="popular">Popular</string>
+    <string name="see_all">See all</string>
+    <string name="only_for_you">Only for you</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="category">
+        <item>Anthology</item>
+        <item>Animal</item>
+        <item>Action and Adventure</item>
+        <item>Alternate history</item>
+        <item>Autobiographies</item>
+        <item>Business</item>
+        <item>Biographies</item>
+        <item>Crafts</item>
+        <item>Children</item>
+        <item>Comic book</item>
+        <item>Classic</item>
+        <item>Cookbooks</item>
+        <item>Drama</item>
+        <item>Diary</item>
+        <item>Dictionary</item>
+        <item>Detective and Mystery</item>
+        <item>Economics</item>
+        <item>Encyclopedia</item>
+        <item>Essays</item>
+        <item>Fairytale</item>
+        <item>Fiction</item>
+        <item>Fantasy</item>
+        <item>Guide</item>
+        <item>Graphic</item>
+        <item>Health and fitness</item>
+        <item>History</item>
+        <item>Horror</item>
+        <item>Historical Fiction</item>
+        <item>Islamic</item>
+        <item>Journal</item>
+        <item>Literary Fiction</item>
+        <item>Memoir</item>
+        <item>Modernist</item>
+        <item>Philosophy</item>
+        <item>Political thriller</item>
+        <item>Poetry</item>
+        <item>Paranormal romance</item>
+        <item>Romance</item>
+        <item>Self Help</item>
+        <item>Science Fiction</item>
+        <item>Short Stories</item>
+        <item>Satire</item>
+        <item>Suspense and Thrillers</item>
+        <item>Textbook</item>
+        <item>True Crime</item>
+    </string-array>
+    <string name="expandable_Text">Get Expert Advice and Curated Content on Top10quest.Search Sms Marketing Platforms, Top Results From Trusted Resources. Search Sms Marketing Platforms, Get Expert Advice and Curated Content on Top10quest.
+    Search Sms Marketing Platforms, Top Results From Trusted Resources. Search Sms Marketing Platforms, Get Expert Advice and Curated Content on Top10quest.
+    Search Sms Marketing Platforms, Top Results From Trusted Resources. Search Sms Marketing Platforms, Get Expert Advice and Curated Content on Top10quest.
+    Search Sms Marketing Platforms, Top Results From Trusted Resources. Search Sms Marketing Platforms, Get Expert Advice and Curated Content on Top10quest.
+    Search Sms Marketing Platforms, Top Results From Trusted Resources. Search Sms Marketing Platforms, Get Expert Advice and Curated Content on Top10quest.
+    Search Sms Marketing Platforms, Top Results From Trusted Resources. Search Sms Marketing  and Curated Content on Top10quest. </string>
+    <string name="category_name">Category name</string>
+    <string name="seeAll">…See more</string>
+    <string name="available_books">Available Books</string>
+    <string name="request">Request</string>
+    <string name="book_name">Book Name</string>
+    <string name="Delete_Account">Do you want to delete ?</string>
+    <string name="Delete_Account_Alert">Deleting this account will result in completely removing your account from the system and you won\'t be access the app</string>
+    <string name="availablebook">(Available Books)</string>
+    <string name="booklist">BookList</string>
+    <string name="see_all_book">See all Book</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="comments">Comments</string>
+    <string name="send_request">Send Request</string>
+    <string name="draft">Draft</string>
+    <string name="drafts">Drafts</string>
+    <string name="delete">Delete</string>
+    <string name="book_request">Book Request</string>
+    <string name="accept_request">Accept Request</string>
+    <string name="book_requesd">Book Request</string>
+    <string name="msg">Message</string>
+    <string name="last_message">last Message</string>
+    <string name="my_favourite">My Favourite</string>
+    <string name="this_content_isn_t_available_at_the_momentwhen_this_happens_it_s_usually_because_the_owner_deleted_the_account">This content isn\'t available at the momentWhen this happens, it\'s usually because the owner deleted the account.</string>
+
 </resources>

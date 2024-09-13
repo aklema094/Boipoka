@@ -60,6 +60,7 @@
 
 
         <EditText
+            android:id="@+id/emailId"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:background="@drawable/edittextbackground"
@@ -80,6 +81,7 @@
             android:textSize="15sp"/>
 
         <EditText
+            android:id="@+id/passwordId"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:background="@drawable/edittextbackground"
@@ -90,7 +92,17 @@
             android:drawableStart="@drawable/passwordd"
             android:drawableEnd="@drawable/toggol"
             />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:indeterminateTint="@color/nevyBlue"
+            android:visibility="gone"/>
+
         <Button
+            android:id="@+id/signInButton"
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
@@ -111,6 +123,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
     <TextView
+        android:id="@+id/forgetPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/forgot_password"

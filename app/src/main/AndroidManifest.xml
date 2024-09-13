@@ -13,26 +13,31 @@
         android:theme="@style/Theme.BOIPOKA"
         tools:targetApi="31">
         <activity
-            android:name=".sendOTPActivity"
+            android:name=".Choicelist"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetPassword"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".SendOTP"
             android:exported="false" />
         <activity
             android:name=".SignUp"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".LogIn"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity
-            android:name=".LogIn"
-            android:exported="false" />
         <activity
             android:name=".getStart5"
             android:exported="false" />
@@ -47,7 +52,7 @@
             android:exported="false" />
         <activity
             android:name=".getStart1"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>
