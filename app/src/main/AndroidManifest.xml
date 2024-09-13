@@ -13,9 +13,11 @@
         android:theme="@style/Theme.BOIPOKA"
         tools:targetApi="31">
         <activity
+            android:name=".sendOTPActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".SendOTP"
             android:exported="false" />
@@ -30,7 +32,7 @@
         </activity>
         <activity
             android:name=".LogIn"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".getStart5"
             android:exported="false" />
@@ -45,11 +47,7 @@
             android:exported="false" />
         <activity
             android:name=".getStart1"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
     </application>
-
-
 
 </manifest>

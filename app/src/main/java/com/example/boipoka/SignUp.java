@@ -23,6 +23,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class SignUp extends AppCompatActivity {
     TextView signin;
@@ -30,7 +32,8 @@ public class SignUp extends AppCompatActivity {
     EditText name,email,password,confirmPassword,phone;
     Button signUp;
     ProgressBar progressBar;
-    FirebaseUser user;
+    String userid;
+    DatabaseReference databaseReference,dataRef;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +46,8 @@ public class SignUp extends AppCompatActivity {
             return insets;
         });
         auth = FirebaseAuth.getInstance();
-        user = auth.getCurrentUser();
+        databaseReference = FirebaseDatabase.getInstance().getReference("Users");
+
 
         signin = findViewById(R.id.signIn);
         signin.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +80,8 @@ public class SignUp extends AppCompatActivity {
                 confirmPass = confirmPassword.getText().toString().trim();
                 if (!isValidInfo(emailS,nameS,phoneS,passwordS,confirmPass)){
                     Toast.makeText(SignUp.this, "fill with correct information", Toast.LENGTH_SHORT).show();
+                    progressBar.setVisibility(View.GONE);
+                    signUp.setVisibility(View.VISIBLE);
                     return;
                 }else{
                     //FireBase Authentication
@@ -87,7 +93,12 @@ public class SignUp extends AppCompatActivity {
                                     signUp.setVisibility(View.VISIBLE);
                                     if (task.isSuccessful()) {
                                         // Sign up success
-                                        Toast.makeText(SignUp.this, "Successfully account created", Toast.LENGTH_SHORT).show();
+                                        userid = auth.getCurrentUser().getUid();
+                                        User user = new User( nameS , phoneS,emailS,passwordS);
+                                        databaseReference.child( userid ).setValue( user );
+                                        //dataRef = databaseReference.child( userid );
+                                        Toast.makeText( getApplicationContext(),"Created account successfully",Toast.LENGTH_SHORT ).show();
+
                                     } else {
                                         // If sign in fails, display a message to the user.
                                         Toast.makeText(SignUp.this, "Failed to create account", Toast.LENGTH_SHORT).show();
@@ -111,45 +122,60 @@ public class SignUp extends AppCompatActivity {
 
         if (nameT.isEmpty()){
             name.setError("name required");
+            name.requestFocus();
             return false;
         }
 
         if ( emailT.isEmpty()) {
             email.setError("email required");
+            email.requestFocus();
             return false;
         }
         if(!validEmailFormat(emailT)){
             email.setError("enter a valid email");
+            email.requestFocus();
             return false;
         }
         if (phoneT.isEmpty()){
             phone.setError("phone number required");
+            phone.requestFocus();
             return false;
         }
-        if (!isValidPhoneNumber(phoneT)){
+        if (!isValidPhoneNumber(phoneT) || phoneT.length()<11){
             phone.setError("enter a valid phone number");
+            phone.requestFocus();
+            return false;
         }
+
         if (pass.isEmpty()){
             password.setError("password required");
+            password.requestFocus();
+            return false;
+        }
+        if(pass.length()<8){
+            password.setError("minimum length of password is 8");
+            password.requestFocus();
             return false;
         }
         if (confirmPass.isEmpty()){
             confirmPassword.setError("confirm password required");
+            confirmPassword.requestFocus();
             return false;
         }
         if (!confirmPass.equals(pass)){
             confirmPassword.setError("confirm password should be match with password");
+            confirmPassword.requestFocus();
             return false;
         }
         return true;
 
-    }
+    }// end of valid info
 
     // check is given email format is valid email or not
     public boolean validEmailFormat(String email){
         return Patterns.EMAIL_ADDRESS.matcher(email).matches();
     }
-    // check is given phone number is valid email or not
+    // check is given phone number is valid phone or not
     public boolean isValidPhoneNumber(String phoneNumber) {
         return Patterns.PHONE.matcher(phoneNumber).matches();
     }
