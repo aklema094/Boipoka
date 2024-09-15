@@ -63,6 +63,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:gravity="center"
+                android:background="@drawable/otpbackground"
                 android:hint="          0"
                 android:imeOptions="actionNext"
                 android:importantForAutofill="no"
@@ -72,11 +73,13 @@
                 android:textSize="24sp"
                 android:textStyle="bold"
                 tools:ignore="LabelFor"/>
+
             <EditText
                 android:id="@+id/inputCode2"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="4dp"
+                android:background="@drawable/otpbackground"
                 android:gravity="center"
                 android:hint="           0"
                 android:imeOptions="actionNext"
@@ -86,14 +89,16 @@
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                tools:ignore="LabelFor"/>
+                tools:ignore="LabelFor" />
+
             <EditText
                 android:id="@+id/inputCode3"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="4dp"
                 android:gravity="center"
-                android:hint="       0"
+                android:hint="            0"
+                android:background="@drawable/otpbackground"
                 android:imeOptions="actionNext"
                 android:importantForAutofill="no"
                 android:inputType="number"
@@ -108,6 +113,7 @@
                 android:layout_height="48dp"
                 android:layout_marginStart="4dp"
                 android:hint="          0"
+                android:background="@drawable/otpbackground"
                 android:gravity="center"
                 android:imeOptions="actionNext"
                 android:importantForAutofill="no"
@@ -123,6 +129,7 @@
                 android:layout_height="48dp"
                 android:layout_marginStart="4dp"
                 android:gravity="center"
+                android:background="@drawable/otpbackground"
                 android:hint="          0"
                 android:imeOptions="actionNext"
                 android:importantForAutofill="no"
@@ -140,6 +147,7 @@
                 android:gravity="center"
                 android:hint="          0"
                 android:imeOptions="actionDone"
+                android:background="@drawable/otpbackground"
                 android:importantForAutofill="no"
                 android:inputType="number"
                 android:maxLength="1"

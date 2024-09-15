@@ -48,14 +48,10 @@ public class SendOTP extends AppCompatActivity {
         buttonGetOTP.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(inputMobile.getText().toString().trim().isEmpty()) {
-                    Toast.makeText( SendOTP.this, "Enter Mobile", Toast.LENGTH_SHORT ).show();
-                    return;
-                }
-
                 progressBar.setVisibility( View.VISIBLE );
                 buttonGetOTP.setVisibility( View.INVISIBLE );
-
+                //String number = value.substring(1);
+                String phoneNumber = "+88" + value;
                 PhoneAuthProvider.getInstance().verifyPhoneNumber(
                         "+880"+inputMobile.getText().toString(),
                         60,

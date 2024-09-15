@@ -113,7 +113,7 @@ public class VerifyOTP extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                            "+880"+ getIntent().getStringExtra( "mobile" ),
+                            "+88"+ getIntent().getStringExtra( "mobile" ),
                             60,
                             TimeUnit.SECONDS,
                             VerifyOTP.this,
