@@ -98,8 +98,8 @@ public class SignUp extends AppCompatActivity {
                                         databaseReference.child( userid ).setValue( user );
                                         //dataRef = databaseReference.child( userid );
                                         Toast.makeText( getApplicationContext(),"Created account successfully",Toast.LENGTH_SHORT ).show();
-                                        Intent intent = new Intent(SignUp.this,SendOTP.class);
-                                        intent.putExtra( "phone",phoneS );
+                                        Intent intent = new Intent(SignUp.this,LogIn.class);
+                                        //intent.putExtra( "phone",phoneS );
                                         startActivity( intent );
 
                                     } else {

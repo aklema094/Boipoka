@@ -199,5 +199,9 @@
     <string name="last_message">last Message</string>
     <string name="my_favourite">My Favourite</string>
     <string name="this_content_isn_t_available_at_the_momentwhen_this_happens_it_s_usually_because_the_owner_deleted_the_account">This content isn\'t available at the momentWhen this happens, it\'s usually because the owner deleted the account.</string>
+    <string name="select_your_recommendation_list">Select your Recommendation list</string>
+    <string name="skip">Skip</string>
+    <string name="anthology">Anthology</string>
+    <string name="action_and_adventure">Action and Adventure</string>
 
 </resources>
